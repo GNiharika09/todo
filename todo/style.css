@@ -1,0 +1,154 @@
+  @import url('https://fonts.googleapis.com/css2?family=Martel+Sans&family=Poppins:wght@300;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+  height: 100vh;
+  width: 100vW;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Roboto', sans-serif;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(./ani.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+
+}
+
+
+
+.wrapper{
+  width: 500px;
+  background-color:skyblue;
+  padding: 15px 15px;
+  backdrop-filter: blur(15px);
+  background: transparent;
+  border: 2.5px solid #5dc8c4a1;
+  border-radius: 10px;
+
+}
+.wrapper .task-input{
+  width: 100%;
+  position: relative;
+  height: 50px;
+}
+.wrapper .task-input i{
+  position: absolute;
+  top: 50%;
+  left: 25px;
+  transform: translate(-50%,-50%);
+  color: #549492a1;
+  font-size:150%
+}
+.wrapper .task-input input{
+  height: 100%;
+  width: 100%;
+  border: 0;
+  outline: 0;
+  padding-left: 53px;
+  color:black;
+  font-size: 121%;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.wrapper .controls{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  
+}
+.wrapper .controls .filters{
+  width: 100%;
+  margin-top: 10px;
+}
+.wrapper .controls .filters span{margin-left: 20px;color:deepskyblue;cursor: pointer;text-transform: capitalize;}
+.wrapper .controls .filters span.active{color:cornflowerblue;}
+.wrapper .controls .clear-all{border: 0;outline: 0;padding: 10px 20px;background: #311a98;color:white;    CURSOR: POINTER;}
+.wrapper .task-box{
+  margin-top: 15px;
+}
+.wrapper .task-box .task-list{
+  list-style: none; 
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 0.2px solid #549492a1;
+  height: 60px;
+  align-items: center;
+}
+.wrapper .task-box .task-list:last-child{
+  border-bottom: 0px solid white;
+}
+.wrapper .task-box .task-list label{
+ display: flex;
+}
+.wrapper .task-box .task-list label input{margin-right: 10px;}
+.wrapper .task-box .task-list label p.checked{
+  text-decoration: line-through;
+}
+.wrapper .task-box .task-list label p{
+  user-select: none;
+  color: white;
+}
+.wrapper .task-box .task-list .settings{cursor: pointer;
+position: relative;}
+.wrapper .task-box .task-list .settings i{font-size: 140%;color:white;}
+
+.wrapper .task-box .task-list .settings .edit-menu{background-color:#549492a1;  color:white;
+position: absolute;
+top: -30px;
+left: -200%;
+width: 150px;
+z-index: 2;
+
+transform: scale(0);
+transition: transform 0.5s;
+transform-origin: top left; 
+}
+
+.wrapper .task-box .task-list .settings .edit-menu.show{
+  transform: scale(1);
+}
+
+.wrapper .task-box .task-list .settings:hover .edit-menu{
+  
+}
+.wrapper .task-box .task-list .settings .edit-menu li{transition:0.5s;list-style: none;padding: 10px 15px;height: 50px;z-index: 1;}
+.wrapper .task-box .task-list .settings .edit-menu li:hover{background:skyblue;}
+.wrapper .task-box .task-list .settings .edit-menu li:hover i{color:#fff;}
+.wrapper .task-box .task-list .settings .edit-menu li:hover {color:#fff;}
+.wrapper .task-box .task-list .settings .edit-menu li i{}
+
+
+h1{
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #ec7ff8;
+  text-shadow: 1px 1px 1px black;
+}
+
+ 
+
+
+
+
+
+
+
+
+
